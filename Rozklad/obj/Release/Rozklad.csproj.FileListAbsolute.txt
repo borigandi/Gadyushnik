@@ -1,0 +1,10 @@
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\bin\Release\Rozklad.exe.config
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\bin\Release\Rozklad.exe
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\bin\Release\Rozklad.pdb
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.csprojAssemblyReference.cache
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.Form1.resources
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.Properties.Resources.resources
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.csproj.GenerateResource.cache
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.csproj.CoreCompileInputs.cache
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.exe
+C:\Users\Богдан\Desktop\Rozklad\Rozklad\obj\Release\Rozklad.pdb
