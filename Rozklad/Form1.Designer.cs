@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.startNewWeek_button = new System.Windows.Forms.Button();
+            this.saveTimetable_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,42 +44,43 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.weeklyGradesTextBox = new System.Windows.Forms.TextBox();
+            this.monthlyGradesTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.finalMonthlyGradesLabel = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.currentWeekNumberLabel = new System.Windows.Forms.Label();
+            this.mondayTimetable = new System.Windows.Forms.RichTextBox();
+            this.tuesdayTimetable = new System.Windows.Forms.RichTextBox();
+            this.wednesdayTimetable = new System.Windows.Forms.RichTextBox();
+            this.thursdayTimetable = new System.Windows.Forms.RichTextBox();
+            this.fridayTimetable = new System.Windows.Forms.RichTextBox();
+            this.saturdayTimetable = new System.Windows.Forms.RichTextBox();
+            this.closeProgram_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // startNewWeek_button
             // 
-            this.button1.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(341, 177);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Done";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.startNewWeek_button.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.startNewWeek_button.Location = new System.Drawing.Point(341, 177);
+            this.startNewWeek_button.Name = "startNewWeek_button";
+            this.startNewWeek_button.Size = new System.Drawing.Size(120, 23);
+            this.startNewWeek_button.TabIndex = 0;
+            this.startNewWeek_button.Text = "Done";
+            this.startNewWeek_button.UseVisualStyleBackColor = true;
+            this.startNewWeek_button.Click += new System.EventHandler(this.StartNewWeek_button_Click);
             // 
-            // button2
+            // saveTimetable_button
             // 
-            this.button2.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(195, 458);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Зберегти";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.saveTimetable_button.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveTimetable_button.Location = new System.Drawing.Point(195, 458);
+            this.saveTimetable_button.Name = "saveTimetable_button";
+            this.saveTimetable_button.Size = new System.Drawing.Size(75, 23);
+            this.saveTimetable_button.TabIndex = 1;
+            this.saveTimetable_button.Text = "Зберегти";
+            this.saveTimetable_button.UseVisualStyleBackColor = true;
+            this.saveTimetable_button.Click += new System.EventHandler(this.SaveTimetable_button_Click);
             // 
             // label1
             // 
@@ -232,23 +233,23 @@
             this.label12.TabIndex = 24;
             this.label12.Text = "Місяць:";
             // 
-            // textBox11
+            // weeklyGradesTextBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(420, 312);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(27, 20);
-            this.textBox11.TabIndex = 25;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.weeklyGradesTextBox.Location = new System.Drawing.Point(420, 312);
+            this.weeklyGradesTextBox.Name = "weeklyGradesTextBox";
+            this.weeklyGradesTextBox.ReadOnly = true;
+            this.weeklyGradesTextBox.Size = new System.Drawing.Size(27, 20);
+            this.weeklyGradesTextBox.TabIndex = 25;
+            this.weeklyGradesTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // monthlyGradesTextBox
             // 
-            this.textBox12.Location = new System.Drawing.Point(420, 334);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(27, 20);
-            this.textBox12.TabIndex = 26;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.monthlyGradesTextBox.Location = new System.Drawing.Point(420, 334);
+            this.monthlyGradesTextBox.Name = "monthlyGradesTextBox";
+            this.monthlyGradesTextBox.ReadOnly = true;
+            this.monthlyGradesTextBox.Size = new System.Drawing.Size(27, 20);
+            this.monthlyGradesTextBox.TabIndex = 26;
+            this.monthlyGradesTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -272,16 +273,16 @@
             this.label14.TabIndex = 28;
             this.label14.Text = "/24";
             // 
-            // label15
+            // finalMonthlyGradesLabel
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label15.Location = new System.Drawing.Point(434, 367);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 15);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "0";
+            this.finalMonthlyGradesLabel.AutoSize = true;
+            this.finalMonthlyGradesLabel.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.finalMonthlyGradesLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.finalMonthlyGradesLabel.Location = new System.Drawing.Point(434, 367);
+            this.finalMonthlyGradesLabel.Name = "finalMonthlyGradesLabel";
+            this.finalMonthlyGradesLabel.Size = new System.Drawing.Size(13, 15);
+            this.finalMonthlyGradesLabel.TabIndex = 29;
+            this.finalMonthlyGradesLabel.Text = "0";
             // 
             // label16
             // 
@@ -294,64 +295,75 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "Тиждень";
             // 
-            // label17
+            // currentWeekNumberLabel
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.ForeColor = System.Drawing.SystemColors.Info;
-            this.label17.Location = new System.Drawing.Point(420, 204);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(14, 16);
-            this.label17.TabIndex = 31;
-            this.label17.Text = "1";
+            this.currentWeekNumberLabel.AutoSize = true;
+            this.currentWeekNumberLabel.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.currentWeekNumberLabel.ForeColor = System.Drawing.SystemColors.Info;
+            this.currentWeekNumberLabel.Location = new System.Drawing.Point(420, 204);
+            this.currentWeekNumberLabel.Name = "currentWeekNumberLabel";
+            this.currentWeekNumberLabel.Size = new System.Drawing.Size(14, 16);
+            this.currentWeekNumberLabel.TabIndex = 31;
+            this.currentWeekNumberLabel.Text = "1";
             // 
-            // richTextBox1
+            // mondayTimetable
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(95, 73);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(175, 43);
-            this.richTextBox1.TabIndex = 32;
-            this.richTextBox1.Text = "Нічого\nнічого\n";
+            this.mondayTimetable.Location = new System.Drawing.Point(95, 73);
+            this.mondayTimetable.Name = "mondayTimetable";
+            this.mondayTimetable.Size = new System.Drawing.Size(175, 43);
+            this.mondayTimetable.TabIndex = 32;
+            this.mondayTimetable.Text = "Нічого\nнічого\n";
             // 
-            // richTextBox2
+            // tuesdayTimetable
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(95, 136);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(175, 43);
-            this.richTextBox2.TabIndex = 33;
-            this.richTextBox2.Text = "Нічого\nнічого\n";
+            this.tuesdayTimetable.Location = new System.Drawing.Point(95, 136);
+            this.tuesdayTimetable.Name = "tuesdayTimetable";
+            this.tuesdayTimetable.Size = new System.Drawing.Size(175, 43);
+            this.tuesdayTimetable.TabIndex = 33;
+            this.tuesdayTimetable.Text = "Нічого\nнічого\n";
             // 
-            // richTextBox3
+            // wednesdayTimetable
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(95, 200);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(175, 43);
-            this.richTextBox3.TabIndex = 34;
-            this.richTextBox3.Text = "Нічого\nнічого\n";
+            this.wednesdayTimetable.Location = new System.Drawing.Point(95, 200);
+            this.wednesdayTimetable.Name = "wednesdayTimetable";
+            this.wednesdayTimetable.Size = new System.Drawing.Size(175, 43);
+            this.wednesdayTimetable.TabIndex = 34;
+            this.wednesdayTimetable.Text = "Нічого\nнічого\n";
             // 
-            // richTextBox4
+            // thursdayTimetable
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(95, 264);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(175, 43);
-            this.richTextBox4.TabIndex = 35;
-            this.richTextBox4.Text = "Нічого\nнічого\n";
+            this.thursdayTimetable.Location = new System.Drawing.Point(95, 264);
+            this.thursdayTimetable.Name = "thursdayTimetable";
+            this.thursdayTimetable.Size = new System.Drawing.Size(175, 43);
+            this.thursdayTimetable.TabIndex = 35;
+            this.thursdayTimetable.Text = "Нічого\nнічого\n";
             // 
-            // richTextBox5
+            // fridayTimetable
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(95, 328);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(175, 43);
-            this.richTextBox5.TabIndex = 36;
-            this.richTextBox5.Text = "Нічого\nнічого\n";
+            this.fridayTimetable.Location = new System.Drawing.Point(95, 328);
+            this.fridayTimetable.Name = "fridayTimetable";
+            this.fridayTimetable.Size = new System.Drawing.Size(175, 43);
+            this.fridayTimetable.TabIndex = 36;
+            this.fridayTimetable.Text = "Нічого\nнічого\n";
             // 
-            // richTextBox6
+            // saturdayTimetable
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(95, 390);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(175, 43);
-            this.richTextBox6.TabIndex = 37;
-            this.richTextBox6.Text = "Нічого\nнічого\n";
+            this.saturdayTimetable.Location = new System.Drawing.Point(95, 390);
+            this.saturdayTimetable.Name = "saturdayTimetable";
+            this.saturdayTimetable.Size = new System.Drawing.Size(175, 43);
+            this.saturdayTimetable.TabIndex = 37;
+            this.saturdayTimetable.Text = "Нічого\nнічого\n";
+            // 
+            // closeProgram_button
+            // 
+            this.closeProgram_button.Font = new System.Drawing.Font("Bookman Old Style", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeProgram_button.Location = new System.Drawing.Point(397, 458);
+            this.closeProgram_button.Name = "closeProgram_button";
+            this.closeProgram_button.Size = new System.Drawing.Size(75, 23);
+            this.closeProgram_button.TabIndex = 38;
+            this.closeProgram_button.Text = "ВИЙТИ";
+            this.closeProgram_button.UseVisualStyleBackColor = true;
+            this.closeProgram_button.Click += new System.EventHandler(this.CloseProgram_button_Click);
             // 
             // Form1
             // 
@@ -360,19 +372,20 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(501, 509);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.closeProgram_button);
+            this.Controls.Add(this.saturdayTimetable);
+            this.Controls.Add(this.fridayTimetable);
+            this.Controls.Add(this.thursdayTimetable);
+            this.Controls.Add(this.wednesdayTimetable);
+            this.Controls.Add(this.tuesdayTimetable);
+            this.Controls.Add(this.mondayTimetable);
+            this.Controls.Add(this.currentWeekNumberLabel);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.finalMonthlyGradesLabel);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.monthlyGradesTextBox);
+            this.Controls.Add(this.weeklyGradesTextBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -386,8 +399,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.saveTimetable_button);
+            this.Controls.Add(this.startNewWeek_button);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -402,8 +415,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button startNewWeek_button;
+        private System.Windows.Forms.Button saveTimetable_button;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -412,24 +425,25 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.TextBox textBox11;
-        public System.Windows.Forms.TextBox textBox12;
+        public System.Windows.Forms.TextBox weeklyGradesTextBox;
+        public System.Windows.Forms.TextBox monthlyGradesTextBox;
         public System.Windows.Forms.CheckedListBox checkedListBox1;
-        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label finalMonthlyGradesLabel;
         private System.Windows.Forms.Label label16;
-        public System.Windows.Forms.Label label17;
-        public System.Windows.Forms.RichTextBox richTextBox1;
-        public System.Windows.Forms.RichTextBox richTextBox2;
-        public System.Windows.Forms.RichTextBox richTextBox3;
-        public System.Windows.Forms.RichTextBox richTextBox4;
-        public System.Windows.Forms.RichTextBox richTextBox5;
-        public System.Windows.Forms.RichTextBox richTextBox6;
+        public System.Windows.Forms.Label currentWeekNumberLabel;
+        public System.Windows.Forms.RichTextBox mondayTimetable;
+        public System.Windows.Forms.RichTextBox tuesdayTimetable;
+        public System.Windows.Forms.RichTextBox wednesdayTimetable;
+        public System.Windows.Forms.RichTextBox thursdayTimetable;
+        public System.Windows.Forms.RichTextBox fridayTimetable;
+        public System.Windows.Forms.RichTextBox saturdayTimetable;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button closeProgram_button;
     }
 }
 

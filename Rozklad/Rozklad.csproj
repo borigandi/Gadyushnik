@@ -52,11 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IRobitnykRoku.cs" />
+    <Compile Include="IEmployeeOfTheYear.cs" />
+    <Compile Include="IKiller.cs" />
     <Compile Include="SuchAGoodDay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RobitnykRoku.cs" />
+    <Compile Include="EmployeeOfTheYear.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

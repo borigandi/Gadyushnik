@@ -9,25 +9,25 @@ namespace Rozklad
 {
     static class SuchAGoodDay
     {
-        static Dictionary<DayOfWeek, string> goodDay = new Dictionary<DayOfWeek, string>();
+        static Dictionary<DayOfWeek, string> daysOfWeek = new Dictionary<DayOfWeek, string>();
 
         static SuchAGoodDay()
         {
-            DictionaryIni();
+            InitializeDictionary();
         }
 
-        static void DictionaryIni()
+        static void InitializeDictionary()
         {
-            goodDay.Add(DayOfWeek.Monday, "Понеділок");
-            goodDay.Add(DayOfWeek.Tuesday, "Вівторок");
-            goodDay.Add(DayOfWeek.Wednesday, "Середа");
-            goodDay.Add(DayOfWeek.Thursday, "Четвер");
-            goodDay.Add(DayOfWeek.Friday, "П'ятниця");
-            goodDay.Add(DayOfWeek.Saturday, "Субота");
+            daysOfWeek.Add(DayOfWeek.Monday, "Понеділок");
+            daysOfWeek.Add(DayOfWeek.Tuesday, "Вівторок");
+            daysOfWeek.Add(DayOfWeek.Wednesday, "Середа");
+            daysOfWeek.Add(DayOfWeek.Thursday, "Четвер");
+            daysOfWeek.Add(DayOfWeek.Friday, "П'ятниця");
+            daysOfWeek.Add(DayOfWeek.Saturday, "Субота");
         }
         public static string GetDayName(DayOfWeek day)
         {
-            return goodDay.ContainsKey(day) ? goodDay[day] : "no";
+            return daysOfWeek.ContainsKey(day) ? daysOfWeek[day] : "Неділя - вихідний";
         }
     }
 }

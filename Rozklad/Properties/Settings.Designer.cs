@@ -26,54 +26,59 @@ namespace Rozklad.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string monday0 {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public string monday {
             get {
-                return ((string)(this["monday0"]));
+                return ((string)(this["monday"]));
             }
             set {
-                this["monday0"] = value;
+                this["monday"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string tuesday0 {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public string tuesday {
             get {
-                return ((string)(this["tuesday0"]));
+                return ((string)(this["tuesday"]));
             }
             set {
-                this["tuesday0"] = value;
+                this["tuesday"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string wednesday0 {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public string wednesday {
             get {
-                return ((string)(this["wednesday0"]));
+                return ((string)(this["wednesday"]));
             }
             set {
-                this["wednesday0"] = value;
+                this["wednesday"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string thursday0 {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public string thursday {
             get {
-                return ((string)(this["thursday0"]));
+                return ((string)(this["thursday"]));
             }
             set {
-                this["thursday0"] = value;
+                this["thursday"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public string friday {
             get {
                 return ((string)(this["friday"]));
@@ -86,6 +91,7 @@ namespace Rozklad.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public string saturday {
             get {
                 return ((string)(this["saturday"]));
@@ -98,95 +104,63 @@ namespace Rozklad.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int tijden {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public int week {
             get {
-                return ((int)(this["tijden"]));
+                return ((int)(this["week"]));
             }
             set {
-                this["tijden"] = value;
+                this["week"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int misyac {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public int month {
             get {
-                return ((int)(this["misyac"]));
+                return ((int)(this["month"]));
             }
             set {
-                this["misyac"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string monday1 {
-            get {
-                return ((string)(this["monday1"]));
-            }
-            set {
-                this["monday1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string tuesday1 {
-            get {
-                return ((string)(this["tuesday1"]));
-            }
-            set {
-                this["tuesday1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string wednesday1 {
-            get {
-                return ((string)(this["wednesday1"]));
-            }
-            set {
-                this["wednesday1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string thursday1 {
-            get {
-                return ((string)(this["thursday1"]));
-            }
-            set {
-                this["thursday1"] = value;
+                this["month"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int counter {
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public int currentWeekNumberParam {
             get {
-                return ((int)(this["counter"]));
+                return ((int)(this["currentWeekNumberParam"]));
             }
             set {
-                this["counter"] = value;
+                this["currentWeekNumberParam"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public global::System.Collections.Specialized.StringCollection textBoxCollect {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["textBoxCollect"]));
             }
             set {
                 this["textBoxCollect"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
+        public global::System.Collections.ArrayList checkboxes {
+            get {
+                return ((global::System.Collections.ArrayList)(this["checkboxes"]));
+            }
+            set {
+                this["checkboxes"] = value;
             }
         }
     }
