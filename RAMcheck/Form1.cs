@@ -14,18 +14,27 @@ namespace RAMdetect
     {
         private RAMInfo RamInfo { get; }
         private ProcessKiller ProcessKiller { get; }
+        private bool IsLoop { get; set; }
 
         public Form1()
         {
             InitializeComponent();
             RamInfo = new RAMInfo(this);
             ProcessKiller = new ProcessKiller();
-            StartHelper.AddAllProcessToComboBox(this);
+            LaunchHelper.AddAllProcessToComboBox(this);
+            IsLoop = false;
         }
 
         private void CheckSelectedProcessRAM_Button_Click(object sender, EventArgs e)
         {
-            RamInfo.GetRAMInfoSelectedProcess(comboBox1.SelectedItem.ToString());
+            try
+            {
+                RamInfo.GetRAMInfoSelectedProcess(comboBox1.SelectedItem.ToString());
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ви не обрали процес!", "УВАГА");
+            }
         }
 
         private void CheckAllProcessesRAM_Button_Click(object sender, EventArgs e)
@@ -37,7 +46,7 @@ namespace RAMdetect
         {
             try
             {
-                ProcessKiller.KillThisProcess(comboBox1.SelectedItem.ToString());
+                ProcessKiller.KillSelectedProcess(comboBox1.SelectedItem.ToString());
             }
             catch (Exception)
             {
@@ -47,7 +56,15 @@ namespace RAMdetect
 
         private void RefreshProcessesList_Button_Click(object sender, EventArgs e)
         {
-            StartHelper.AddAllProcessToComboBox(this);
+            LaunchHelper.AddAllProcessToComboBox(this);
+        }
+
+        private void GetInfoLoop_CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (getInfoLoop_CheckBox.CheckState == CheckState.Checked)
+                IsLoop = true;
+            else
+                IsLoop = false;
         }
     }
 }

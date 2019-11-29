@@ -21,23 +21,18 @@ namespace RAMdetect
 
         public void GetRAMInfoSelectedProcess(string selectedProcess)
         {
-            try
+            long ram = default;
+            IEnumerable<Process> processList = Process
+                              .GetProcesses()
+                              .Where(x => x.ProcessName == selectedProcess)
+                              .Select(x => x);
+
+            foreach (var process in processList)
             {
-                long ram = default;
-                var processList = Process
-                                  .GetProcesses()
-                                  .Where(x => x.ProcessName == selectedProcess)
-                                  .Select(x => x);
-                foreach (var process in processList)
-                {
-                    ram += process.WorkingSet64;
-                }
-                ShowRAMInfo(ram);
+                ram += process.WorkingSet64;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, ex.Source);
-            }
+
+            ShowRAMInfo(ram);
             //PerformanceCounter ramCounter = new PerformanceCounter("Process", "Working Set", p.ProcessName);
             //PerformanceCounter cpuCounter = new PerformanceCounter("Process", "% Processor Time", p.ProcessName);
         }
@@ -45,10 +40,12 @@ namespace RAMdetect
         {
             long ram = default;
             var processList = Process.GetProcesses();
-            foreach (var process in processList)
+
+            foreach (Process process in processList)
             {
                 ram += process.WorkingSet64;
             }
+
             ShowRAMInfo(ram);
         }
 

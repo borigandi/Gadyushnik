@@ -11,7 +11,7 @@ namespace RAMdetect
 {
     class ProcessKiller
     {
-        public void KillThisProcess(string selectedProcess)
+        public void KillSelectedProcess(string selectedProcess)
         {
             if (GetUserChoice())
             {

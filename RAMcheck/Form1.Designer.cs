@@ -36,6 +36,7 @@
             this.RefreshProcessesList_Button = new System.Windows.Forms.Button();
             this.KillSelectedProcess_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.getInfoLoop_CheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.CheckSelectedProcessRAM_Button.Location = new System.Drawing.Point(19, 74);
             this.CheckSelectedProcessRAM_Button.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.CheckSelectedProcessRAM_Button.Name = "CheckSelectedProcessRAM_Button";
-            this.CheckSelectedProcessRAM_Button.Size = new System.Drawing.Size(122, 23);
+            this.CheckSelectedProcessRAM_Button.Size = new System.Drawing.Size(106, 23);
             this.CheckSelectedProcessRAM_Button.TabIndex = 0;
             this.CheckSelectedProcessRAM_Button.Text = "Check";
             this.CheckSelectedProcessRAM_Button.UseVisualStyleBackColor = false;
@@ -61,9 +62,9 @@
             this.CheckAllProcessesRAM_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CheckAllProcessesRAM_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CheckAllProcessesRAM_Button.Font = new System.Drawing.Font("Kievit Offc Pro", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckAllProcessesRAM_Button.Location = new System.Drawing.Point(141, 74);
+            this.CheckAllProcessesRAM_Button.Location = new System.Drawing.Point(124, 74);
             this.CheckAllProcessesRAM_Button.Name = "CheckAllProcessesRAM_Button";
-            this.CheckAllProcessesRAM_Button.Size = new System.Drawing.Size(62, 23);
+            this.CheckAllProcessesRAM_Button.Size = new System.Drawing.Size(60, 23);
             this.CheckAllProcessesRAM_Button.TabIndex = 2;
             this.CheckAllProcessesRAM_Button.Text = "All";
             this.CheckAllProcessesRAM_Button.UseVisualStyleBackColor = false;
@@ -148,12 +149,27 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Processes: 0";
             // 
+            // getInfoLoop_CheckBox
+            // 
+            this.getInfoLoop_CheckBox.AutoSize = true;
+            this.getInfoLoop_CheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.getInfoLoop_CheckBox.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.getInfoLoop_CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.getInfoLoop_CheckBox.Font = new System.Drawing.Font("Kievit Offc Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getInfoLoop_CheckBox.Location = new System.Drawing.Point(190, 77);
+            this.getInfoLoop_CheckBox.Name = "getInfoLoop_CheckBox";
+            this.getInfoLoop_CheckBox.Size = new System.Drawing.Size(13, 12);
+            this.getInfoLoop_CheckBox.TabIndex = 9;
+            this.getInfoLoop_CheckBox.UseVisualStyleBackColor = true;
+            this.getInfoLoop_CheckBox.CheckedChanged += new System.EventHandler(this.GetInfoLoop_CheckBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(331, 179);
+            this.Controls.Add(this.getInfoLoop_CheckBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
@@ -186,6 +202,7 @@
         public System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox getInfoLoop_CheckBox;
     }
 }
 
