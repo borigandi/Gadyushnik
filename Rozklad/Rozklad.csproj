@@ -52,12 +52,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IEmployeeOfTheYear.cs" />
-    <Compile Include="IKiller.cs" />
+    <Compile Include="ForSerialization.cs" />
+    <Compile Include="IGradesHelper.cs" />
+    <Compile Include="ILaunchHelper.cs" />
+    <Compile Include="ITimetableHelper.cs" />
     <Compile Include="SuchAGoodDay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="EmployeeOfTheYear.cs" />
+    <Compile Include="ClassMonitor.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
